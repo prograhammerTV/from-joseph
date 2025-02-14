@@ -5,7 +5,7 @@ html, body {
     font-family: 'Arial', sans-serif;
     background-color: black;
     color: white;
-     font-family: cursive;
+    font-family: cursive;
   }
   .container {
     position: relative;
@@ -41,7 +41,7 @@ html, body {
   /* Tablet */
   @media (max-width: 1100px) {
     .rose-container {
-      top: 50rem;
+      top: 30rem;
       left: 1rem;
       align-items: center;
     }
@@ -53,7 +53,7 @@ html, body {
   /* Mobile */
   @media (max-width: 700px) {
     .rose-container {
-      top:30rem;
+      top:20rem;
       left: 1rem;
       align-items: center;
     }.name-title{
@@ -64,7 +64,17 @@ html, body {
   /* Mobile */
   @media (max-width: 500px) {
     .rose-container {
-      top:30rem;
+      top:20rem;
+      left: 1rem;
+    
+    }.name-title{
+        font-size: 1.3rem;
+    }
+  }
+   /* Mobile */
+   @media (max-width: 375px) {
+    .rose-container {
+      top:15rem;
       left: 1rem;
     
     }.name-title{
@@ -81,10 +91,10 @@ html, body {
     top: 0;
     bottom: 0;
     margin: auto;
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .container div {
     position: absolute;
