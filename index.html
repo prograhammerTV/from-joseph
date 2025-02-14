@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Flowers From Joseph Baticos</title>
+</head>
+<body>
+    <h1 class="name-title">Happy Valentine`s Day Flowers for You</h1> 
+    <div id="rose-container" class="rose-container">
+    <div class="container">
+        <div class="glass"></div>
+        <div class="thorns">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="glow"></div>
+        <div class="rose-leaves">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="rose-petals">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="sparkles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const roseContainer = document.getElementById("rose-container");
+
+    for (let i = 0; i < 5; i++) {
+        let rose = document.createElement("div");
+        rose.classList.add("container");
+        rose.style.top = `${Math.random() * 0 + 0}%`;
+        rose.style.animationDelay = `${i * 1.0}s`;
+        rose.innerHTML = `
+            <div class="glass"></div>
+            <div class="thorns">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="glow"></div>
+            <div class="rose-leaves">
+                <div></div><div></div>
+            </div>
+            <div class="rose-petals">
+                <div></div><div></div><div></div>
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="sparkles">
+                <div></div><div></div><div></div><div></div>
+                <div></div><div></div><div></div><div></div>
+                <div></div><div></div>
+            </div>
+        `;
+        roseContainer.appendChild(rose);
+    }
+});
+    </script>
+</html>
+
